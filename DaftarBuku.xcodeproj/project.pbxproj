@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,9 @@
 		0BE98C92235779330093D56E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0BE98C90235779330093D56E /* LaunchScreen.storyboard */; };
 		0BE98C9D235779340093D56E /* DaftarBukuTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE98C9C235779340093D56E /* DaftarBukuTests.swift */; };
 		0BE98CA8235779340093D56E /* DaftarBukuUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE98CA7235779340093D56E /* DaftarBukuUITests.swift */; };
+		0BE98CB723577E310093D56E /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE98CB623577E310093D56E /* MainView.swift */; };
+		0BE98CBA23578EA80093D56E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BE98CB923578EA80093D56E /* Color.swift */; };
+		FDB53852F848FF286353CBA3 /* Pods_DaftarBuku.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3F65F2A72D9D622D132AE /* Pods_DaftarBuku.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,11 @@
 		0BE98CA3235779340093D56E /* DaftarBukuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DaftarBukuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0BE98CA7235779340093D56E /* DaftarBukuUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaftarBukuUITests.swift; sourceTree = "<group>"; };
 		0BE98CA9235779340093D56E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0BE98CB623577E310093D56E /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		0BE98CB923578EA80093D56E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		53E3F65F2A72D9D622D132AE /* Pods_DaftarBuku.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DaftarBuku.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AAA6396997C980FBF0BCF07 /* Pods-DaftarBuku.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaftarBuku.debug.xcconfig"; path = "Target Support Files/Pods-DaftarBuku/Pods-DaftarBuku.debug.xcconfig"; sourceTree = "<group>"; };
+		CF634EE6739709024975879A /* Pods-DaftarBuku.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DaftarBuku.release.xcconfig"; path = "Target Support Files/Pods-DaftarBuku/Pods-DaftarBuku.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB53852F848FF286353CBA3 /* Pods_DaftarBuku.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +92,8 @@
 				0BE98C9B235779340093D56E /* DaftarBukuTests */,
 				0BE98CA6235779340093D56E /* DaftarBukuUITests */,
 				0BE98C82235779300093D56E /* Products */,
+				D18C76B435E3837FE63071C4 /* Pods */,
+				B6D3F64314E179C441FB751A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +110,8 @@
 		0BE98C83235779300093D56E /* DaftarBuku */ = {
 			isa = PBXGroup;
 			children = (
+				0BE98CB823578E670093D56E /* ExtraUI */,
+				0BE98CB523577DF50093D56E /* MainView */,
 				0BE98C84235779300093D56E /* AppDelegate.swift */,
 				0BE98C86235779300093D56E /* ViewController.swift */,
 				0BE98C88235779300093D56E /* Main.storyboard */,
@@ -128,6 +141,39 @@
 			path = DaftarBukuUITests;
 			sourceTree = "<group>";
 		};
+		0BE98CB523577DF50093D56E /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				0BE98CB623577E310093D56E /* MainView.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		0BE98CB823578E670093D56E /* ExtraUI */ = {
+			isa = PBXGroup;
+			children = (
+				0BE98CB923578EA80093D56E /* Color.swift */,
+			);
+			path = ExtraUI;
+			sourceTree = "<group>";
+		};
+		B6D3F64314E179C441FB751A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53E3F65F2A72D9D622D132AE /* Pods_DaftarBuku.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D18C76B435E3837FE63071C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9AAA6396997C980FBF0BCF07 /* Pods-DaftarBuku.debug.xcconfig */,
+				CF634EE6739709024975879A /* Pods-DaftarBuku.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0BE98CAC235779340093D56E /* Build configuration list for PBXNativeTarget "DaftarBuku" */;
 			buildPhases = (
+				E2A882F3C036D660E20C184A /* [CP] Check Pods Manifest.lock */,
 				0BE98C7D235779300093D56E /* Sources */,
 				0BE98C7E235779300093D56E /* Frameworks */,
 				0BE98C7F235779300093D56E /* Resources */,
+				1298345A2489464552AACDF4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,13 +302,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1298345A2489464552AACDF4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaftarBuku/Pods-DaftarBuku-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DaftarBuku/Pods-DaftarBuku-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DaftarBuku/Pods-DaftarBuku-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A882F3C036D660E20C184A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DaftarBuku-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0BE98C7D235779300093D56E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0BE98C87235779300093D56E /* ViewController.swift in Sources */,
+				0BE98CB723577E310093D56E /* MainView.swift in Sources */,
 				0BE98C8D235779300093D56E /* DaftarBuku.xcdatamodeld in Sources */,
+				0BE98CBA23578EA80093D56E /* Color.swift in Sources */,
 				0BE98C85235779300093D56E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -434,6 +526,7 @@
 		};
 		0BE98CAD235779340093D56E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AAA6396997C980FBF0BCF07 /* Pods-DaftarBuku.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +545,7 @@
 		};
 		0BE98CAE235779340093D56E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF634EE6739709024975879A /* Pods-DaftarBuku.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
